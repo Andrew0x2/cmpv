@@ -23,22 +23,21 @@ CMPV is an application designed to monitor the status of MPV and integrate seaml
 1. Clone the repository:
 git clone git@github.com:Andrew0x2/cmpv.git
 cd cmpv
-text
 
 2. Compile the application:
-gcc -o mpv_monitor mpv_monitor.c -ljson-c
-text
+cc -o mpv_monitor mpv_monitor.c -ljson-c 
+or use nob 
+cc -o nob nob.c 
+./nob 
 
 3. Configure i3blocks:
 Edit your i3blocks configuration file (usually located at `~/.config/i3blocks/config`) and add a new entry:
 [mpv]
 command=/absolute/path/to/mpv_monitor
 interval=5
-text
 
 4. Reload i3 configuration:
 i3-msg reload
-text
 
 ---
 
@@ -77,6 +76,13 @@ Watch CMPV in action:
 ## Contributions
 
 Contributions are welcome! Feel free to open issues or pull requests to improve CMPV.
+
+---
+
+## Acknowledgments
+
+Special thanks to **tsoding** for providing [`nob.h`](https://github.com/tsoding/nobuild).
+
 
 ---
 

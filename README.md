@@ -31,8 +31,10 @@ Honestly? I just wanted to build something for myself. I love using MPV and i3, 
 ## Installation
 
 1. Clone the repository:
+```console
 $ git clone git@github.com:Andrew0x2/cmpv.git
 $ cd cmpv
+```
 
 2. Compile the application:
 ```console
@@ -64,7 +66,9 @@ i3-msg reload
 ## Usage
 
 Run the application directly from the terminal:
+```console
 ./mpv_monitor
+```
 
 Or let i3blocks execute it automatically.
 
